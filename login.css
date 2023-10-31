@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 201, 131);
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.warp {
+    height: 70vh;
+    width: 60vw;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    box-shadow: -5px 5px 5px black;
+}
+
+.campos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    background-color: rgb(226, 119, 43);
+}
+
+.imagem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputers {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inputers input {
+    margin-top: 30px;
+    border: none;
+    text-align: center;
+    width: 250px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.147);
+    border-radius: 15px;
+}
+
+.inputers input::placeholder {
+    color: black;
+    font-weight: bolder;
+}
+
+#tijolinho {
+    width: 500px;
+}
+
+.campos button {
+    width: 100px;
+    border: none;
+    height: 30px;
+    background-color: rgb(255, 201, 131);
+    box-shadow: 5px 3px 3px black;
+    border-radius: 15px;
+}
+
+button:hover{
+    background-color: brown;
+}

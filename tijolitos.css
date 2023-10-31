@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title{
+    text-align: center;
+}
+
+.container{
+    margin-top: 55px;
+    width: 80vw;
+    height: 70vh;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.tijolito {
+    width: 100%;
+}
+
+.camps {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.inp {
+    
+}
