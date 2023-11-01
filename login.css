@@ -1,118 +1,45 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-body {
-    background-color: rgb(255, 201, 131);
-}
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/2827337.png" type="image/x-icon">
+    <title>--Login--</title>
+</head>
 
-.container {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+<body>
+    <div class="container">
+        <div class="warp">
+            <div class="campos">
+                <h1>Login</h1>
+                <div class="inputersLabel">
 
-.warp {
-    height: 70vh;
-    width: 60vw;
-    border-radius: 15px;
-    background-color: white;
-    display: flex;
-    box-shadow: -5px 5px 5px black;
-}
+                    <label>
+                        <h3>EMAIL</h3>
+                        <input type="text" name="email" id="email" placeholder="Digite seu email aqui">
+                    </label>
+                    <label>
+                        <h3>SENHA</h3>
+                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha aqui">
+                        <a href="">
+                            <h6>Forgot password</h6>
+                        </a>
+                    </label>
+                    <label>
+                        <a href="index.html"><button>Login</button></a>
+                    </label>
+                </div>
+                
+            </div>
+            <div class="imagem">
+                <img src="img/personagem-de-desenho-animado-de-tijolo-como-um-design-bonito-de-construtor_152558-58533.avif"
+                    alt="tijolinho" id="tijolinho">
+            </div>
+        </div>
+    </div>
+</body>
 
-.campos {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 15px;
-    background-color: rgb(226, 119, 43);
-}
-
-.imagem {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.inputersLabel {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.inputersLabel input {
-    margin-top: 30px;
-    border: none;
-    text-align: center;
-    width: 250px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.147);
-    border-radius: 15px;
-}
-
-.inputersLabel input::placeholder {
-    color: black;
-    font-weight: bolder;
-}
-
-#tijolinho {
-    width: 500px;
-}
-
-.campos button {
-    width: 100px;
-    border: none;
-    height: 30px;
-    background-color: rgb(255, 201, 131);
-    box-shadow: 5px 3px 3px black;
-    border-radius: 15px;
-}
-
-button:hover{
-    background-color: brown;
-}
-
-.inputersLabel label {
-    margin-top: 40px;
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-    .imagem {
-        display: none;
-    }
-
-    .warp {
-        width: 79%;
-    }
-
-    .campos {
-        width: 100%;
-        justify-content: center;
-    }
-    
- }
-
- @media only screen and (max-device-width: 828px) and (max-device-height: 1792px) {
-    .imagem {
-        display: none;
-    }
-
-    .warp {
-        width: 79%;
-    }
-
-    .campos {
-        width: 100%;
-        justify-content: center;
-    }
-
- }
+</html>
