@@ -11,7 +11,6 @@ body {
     background-image: url(img/wallpaper2.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
 }
 
 /* Cabeçalho */
@@ -19,8 +18,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 15vh;
-    width: 100vw;
+    height: 152px;
+    width: 100%;
     background-color: antiquewhite;
     scroll-behavior: initial;
     position: relative;
@@ -29,12 +28,12 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    margin-top: 23px;
+    margin: 30px 0;
 }
 
 footer {
-    width: 100vw;
-    height: 15vh;
+    width: 100%;
+    height: 100px;
     background-color: antiquewhite; 
     display: flex;
     justify-content: center;
@@ -53,7 +52,6 @@ footer {
 /* Div header direita */
 .headerdireita>ul {
     display: flex;
-    flex-direction: row;
 }
 
 .headerdireita>ul>li {
@@ -114,7 +112,9 @@ article {
 
 .seutijolo {
     background-color: rgb(255, 201, 131);
-    height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -129,7 +129,7 @@ h1 {
 }
 
 .celula {
-    margin-top: 40px;
+    margin: 40px 0;
     width: 60vw;
     height: 80vh;
     background: white;
@@ -144,7 +144,7 @@ h1 {
 
 #produto {
     margin-top: 20px;
-    width: 120%;
+    width: 100%;
 }
 
 .personalizar {
@@ -157,7 +157,7 @@ h1 {
 }
 
 .inputers {
-    width: 300px;
+    width: 250px;
     border-radius: 15px;
     border: none;
     background-color: rgb(255, 255, 255);
@@ -207,3 +207,63 @@ button:hover{
     text-align: center;
     flex-direction: column;
 }
+
+@media only screen and (max-device-width: 828px) and (max-device-height: 1792px) {
+    .headeresquerda {
+        display: flex;
+        width: 100%;
+    }
+    
+    .headerdireita>ul {
+        display: flex;
+        /* height: 100%; */
+        flex-direction: column;
+        list-style: none;
+    }
+
+    .carrossel {
+        width: 80vw;
+        height: 350px;
+    }
+
+    .inputers {
+        margin: 20px 0;
+    }
+
+    #produto {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .celula {
+        margin: 25px 0;
+        width: 350px;
+        height: 525px;
+        background: white;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 4px 4px 4px black;
+    }
+
+    .seutijolo {
+        height: 80%;
+    }
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+   footer {
+    bottom: 0;
+   } 
+}
+
+/* Media query para iPhone SE (2ª geração) */
+@media only screen and (max-width: 385px) {
+   header {
+    height: 165px;
+   }
+}
+  
+  
+  
