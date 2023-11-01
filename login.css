@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
@@ -30,7 +31,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
     border-radius: 15px;
     background-color: rgb(226, 119, 43);
 }
@@ -42,14 +42,14 @@ body {
     justify-content: center;
 }
 
-.inputers {
+.inputersLabel {
     display: flex;
     text-align: center;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.inputers input {
+.inputersLabel input {
     margin-top: 30px;
     border: none;
     text-align: center;
@@ -59,7 +59,7 @@ body {
     border-radius: 15px;
 }
 
-.inputers input::placeholder {
+.inputersLabel input::placeholder {
     color: black;
     font-weight: bolder;
 }
@@ -80,3 +80,39 @@ body {
 button:hover{
     background-color: brown;
 }
+
+.inputersLabel label {
+    margin-top: 40px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .imagem {
+        display: none;
+    }
+
+    .warp {
+        width: 79%;
+    }
+
+    .campos {
+        width: 100%;
+        justify-content: center;
+    }
+    
+ }
+
+ @media only screen and (max-device-width: 828px) and (max-device-height: 1792px) {
+    .imagem {
+        display: none;
+    }
+
+    .warp {
+        width: 79%;
+    }
+
+    .campos {
+        width: 100%;
+        justify-content: center;
+    }
+
+ }
