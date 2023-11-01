@@ -33,6 +33,18 @@ main {
     flex-direction: column;
 }
 
-.inp {
-    
+
+@media only screen and (max-device-width: 828px) and (max-device-height: 1792px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .camps {
+        margin-left: 2rem;
+        align-items: center;
+    }
+    main {
+        margin-bottom: 62px;
+    }
 }
+  
