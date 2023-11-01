@@ -9,6 +9,7 @@ main {
     align-items: center;
     justify-content: center;
     margin-bottom: 33px;
+    height: 100vh;
 }
 
 .auxiliar {
@@ -31,11 +32,9 @@ main {
     width: 80vw;
     height: 72vh;
     border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .texto {
-    background-color: rgba(0, 0, 0, 0.058);
     width: 700px;
     height: 500px;
 }
@@ -44,4 +43,41 @@ main {
     font-size: 20px;
     width: 80vw;
     height: 100vh;
+}
+
+@media only screen and (max-device-width: 828px) and (max-device-height: 1792px) {
+    .auxiliar {
+        width: 100%;
+        height: 620px;
+    }
+
+    .conteudo {
+        display: flex;
+        width: 100%;
+        height: calc(669px - 15vh);
+        margin: auto;
+    }
+
+    .texto {
+        width: 100%;
+        height: 620px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 385px) {
+    .auxiliar {
+        height: 645px;
+    }
+ }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .texto {
+        width: 700px;
+        height: 500px;
+    }
+
 }
